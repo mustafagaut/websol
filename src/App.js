@@ -12,9 +12,10 @@ function App() {
 
  useEffect(() => {
    
- 
+
+
    
- }, [type])
+ }, [type,val])
 
  const handleAdd=(e)=>{
   e.preventDefault();
@@ -63,7 +64,7 @@ const submitHandler=()=>{
       </div>
       <div>
       <p>Question Description</p>
-      <input type="text" placeholder='Question Description' onChange={e=>setQuestionDescription(e.target.value)} required/>
+      <input type="text" placeholder='Question Description' onChange={e=>setQuestionDescription(e.target.value)}  required/>
       </div>
       <div>
         <p className='comparator'>Answer Type</p>
@@ -77,7 +78,7 @@ const submitHandler=()=>{
         }
       </select>
     </div>
-   
+  
     {val.map((data,i)=>{
       return (<OptionCard 
         index={i} 
@@ -88,7 +89,7 @@ const submitHandler=()=>{
     })}
       <button onClick={e=>handleAdd(e)} disabled={type!==""?false:true}>+</button>
                     
-    <input type="submit" value ="Submit" className='submitbtn'/> 
+    <input type="submit" value ="Submit" className='submitbtn' disabled={val.length===0?true:false}/> 
     </form>
 
 

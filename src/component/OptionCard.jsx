@@ -31,8 +31,10 @@ const handleChange=(value ,index)=>{
         <input  value={val[index].data} onChange={e=>handleChange(e.target.value,index)} placeholder='PlaceHolder'/>
         </div>
         {
-        (type!=="Radio"||
-        type!=="CheckBox"||
+
+          
+        (type!=="Radio"&&
+        type!=="CheckBox"&&
         type!=="Select")?(
        <> <div className='componentWraper '>
        <p className='comparator'>Min</p>
