@@ -1,0 +1,64 @@
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 2vmax;
+  width :50vw;
+  margin: auto;
+ 
+  position:relative;
+
+
+}
+form>div{
+  background-color: rgb(161, 182, 145);
+  margin: 2vmax;
+}
+form>div>p{
+  padding-left: 1vmax;
+  padding-bottom: 0;
+  font-size: 1vmax;
+}
+form >div>input,select{
+  background-color: transparent;
+  padding:5px;
+  width:98%;
+  border: none;
+  border-bottom: 1px solid green;
+  padding-bottom: 0;
+  font:500 1.5vmax serif;
+ 
+}
+form>button{
+  width:40px;
+  height:40px;
+  border-radius: 100%;
+  text-align: center;
+  font:800 2vmax serif;
+  color: green;
+  border: 2px solid green;
+  position: absolute;
+  right: 70px;
+  bottom:100px;  
+  
+}
+.submitbtn{
+  background-color: rgb(18, 156, 41);
+  color: white;
+  width:10vmax;
+  align-items: center;
+  padding:1vmax;
+  justify-content: center;
+  margin-top: 100px;
+  transition: all 0.5s;
+
+ 
+  
+}
+
+button:disabled{
+  display: none;
+}
+
+.submitbtn:hover{
+  background-color: rgba(18, 156, 41, 0.607) ;
+}

@@ -1,0 +1,53 @@
+.options{
+    padding: 1vmax;
+    margin: 1vmax;
+    padding-top: 0;
+    background-color: rgb(209, 205, 205);
+    height:9vmax;
+    font :300 1vmax times;
+    box-shadow: 0 0 5px;
+
+}
+.options>section{
+    display: flex;
+    align-items: center;
+    
+}
+.componentWraper {
+    
+    position: relative;
+    border: 1px solid rgb(6, 6, 6);
+    border-radius: 12px;
+    margin: 2px;
+    width:20%;
+    
+  }
+  
+.options>section>div>input{
+    border:none;
+    background-color: transparent;
+    width:90%;
+    padding: 1vmax 0.5vmax;
+    border-radius: 2px;
+
+}
+
+
+.componentWraper p {
+    position: absolute;
+    top: -25px;
+    padding: 0 10px;
+    background-color: rgb(209, 205, 205);
+    
+  }
+
+.options>section>button{
+    width:40px;
+    height:40px;
+    text-align: center;
+    border-radius: 100%;
+    color: red;
+    font:900 2vmax serif;
+    border: 2px solid red;
+    margin: 2px;
+}
